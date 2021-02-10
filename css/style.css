@@ -26,6 +26,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 body {
     padding: 15px;
     background: #030305;
