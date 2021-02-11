@@ -31,7 +31,7 @@ img {
     height: auto;
 }
 body {
-    padding: 15px;
+    padding-top: 0;
     background: #030305;
     background-image: url(../img/bg.png);
     background-repeat: repeat;
@@ -49,6 +49,7 @@ body {
     grid-row: 1/2;
 }
 .main {
+    padding: 15px;
     position: relative;
     /* background-image: url(../img/bg.png);
     background-repeat: no-repeat;
@@ -138,4 +139,109 @@ ul {
 }
 li {
     margin-bottom: 5px;
+}
+.header {
+    background-color: #131313;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__mail {
+    display: block;
+    margin: 0 !important;
+}
+.header__button {
+    transition: 0.3s;
+    background-color: #01514C;
+    border: 2px solid #01514C;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 30px;
+    margin: 0 !important;
+}
+.header__button:focus {
+    outline: none;
+}
+.header__button:hover {
+    background: #ffffff;
+    color: #01514C;
+}
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal--visible {
+    visibility: visible;
+    opacity: 1;
+}
+.modal__input:focus {
+    outline: none;
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.modal__form {
+    background: url(../img/bg.png) no-repeat center;
+    padding: 40px;
+    position: relative;
+}
+.modal__input {
+    margin: 0 !important;
+    margin-bottom: 20px;
+    color: #131313;
+    min-width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+.modal__close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.modal__button {
+    transition: 0.3s;
+    background-color: #01514C;
+    padding: 15px 30px;
+    border: 2px solid #01514C;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+.modal__button:focus {
+    outline: none;
+}
+.modal__button:hover {
+    background-color: #fff;
+    color: #01514C;
+}
+.input-group {
+    position: relative;
+}
+.input-group label.invalid {
+    color: tomato;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
 }

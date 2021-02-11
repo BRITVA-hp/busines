@@ -79,6 +79,13 @@
 
 }
 @media screen and (max-width: 992px) {
+    .card:hover {
+        transform: none;
+    }
+    .header {
+        width: 100%;
+        padding: 10px;
+    }
     .main__container {
         grid-template-rows: 0.5fr repeat(5, 1fr);
     }
@@ -154,5 +161,26 @@
 @media screen and (max-width: 567px) {
     body {
         text-align: left;
+    }
+    .modal__box {
+        width: 95%;
+    }
+    .modal__form {
+        padding: 10px;
+        padding-top: 50px;
+    }
+    .modal__close {
+        right: 0;
+        top: 0;
+    }
+    .modal__button {
+        width: 100%;
+    }
+    .modal__input {
+        min-width: 0;
+        width: 100%;
+    }
+    .header__button {
+        padding: 10px
     }
 }

@@ -7,10 +7,12 @@
     <link rel="shortcut icon" href="/img/hand.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <title>Document</title>
-</head>
 <body>
-
+    <header class="header">
+        <a href="mailto:sapportbiz@yandex.ru" class="card__text header__mail">sapportbiz@yandex.ru</a>
+        <button class="card__text header__button">Оставить заявку</button>
+    </header>
+    <!-- /.header -->
     <section class="main">
         <div class="main__img"><img src="img/busines.jpg" alt="business"></div>
         <div class="main__container">
@@ -75,6 +77,26 @@
             </div>
         </div>
     </section>
+
+    <div class="modal">
+        <div class="modal__box">
+            <form action="#" class="modal__form">
+                <div class="modal__close"><img src="img/close.png" alt="close"></div>
+                    <div class="input-group">
+                        <input name="modalName" type="text" placeholder="Введите ваше имя" class="card__text modal__input">
+                    </div>
+                    <div class="input-group">
+                        <input name="modalTel" type="tel" placeholder="Введите ваш телефон" class="card__text modal__input">
+                    </div>
+                    <button class="card__text modal__button">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
     
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
