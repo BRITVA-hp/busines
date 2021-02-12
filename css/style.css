@@ -58,8 +58,9 @@ body {
 }
 .main__img {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 200px;
+    top: 60px;
+    width: 400px;
 }
 .main__img img {
     border-radius: 10px;
